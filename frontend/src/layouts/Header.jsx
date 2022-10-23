@@ -18,6 +18,9 @@ import { changeTheme } from "../features/ui/UISlice";
 import UserAvatar from "../assets/users/avatar-1.jpg";
 
 const Header = () => {
+  const pic_url =
+    "https://as1.ftcdn.net/v2/jpg/03/46/83/96/1000_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg";
+
   const [nav, setNav] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const [dropdown, setDropdown] = useState(false);

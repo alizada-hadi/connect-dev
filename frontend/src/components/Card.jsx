@@ -4,12 +4,15 @@ import { Link } from "react-router-dom";
 import Badge from "./Badge";
 
 const Card = ({ programmer }) => {
+  const pic_url =
+    "https://as1.ftcdn.net/v2/jpg/03/46/83/96/1000_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg";
+
   return (
     <Link to={`/programmer/${programmer.id}`}>
       <div className="bg-white rounded-md border-2 dark:bg-slate-700 dark:border-gray-500 hover:shadow-md hover:shadow-outline">
         <div className="flex flex-col">
           <img
-            src={programmer.avatar}
+            src={programmer.avatar ? programmer?.avatar : pic_url}
             className="mx-auto rounded-full w-32 h-32 my-2"
             alt=""
           />
